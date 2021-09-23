@@ -1,0 +1,35 @@
+h1{
+    color:red;
+    font-size: 3em;
+    text-align: center;
+    }
+
+span{
+    
+    font-size: 2em;
+    font-style: italic;
+    }
+
+    p{
+        text-align:justify;
+    }
+
+    #paragraphe1::first-letter{
+
+        color:mediumorchid;
+    }
+
+    #paragraphe2::first-letter , #paragraphe3::first-letter, #paragraphe4::first-letter, #paragraphe5::first-letter{
+
+        color:green;
+    }
+
+    
+
+    h2:hover{
+
+        color: blue;
+
+    }
+
+    

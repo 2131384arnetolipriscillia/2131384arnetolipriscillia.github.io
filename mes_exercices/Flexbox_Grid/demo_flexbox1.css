@@ -1,0 +1,32 @@
+body {
+    margin: 1em;
+}
+
+#container {
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    padding: 10px;
+    height: 200px;
+    background-color: cyan;
+}
+ 
+#container div {
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    font-size: 3em;
+} 
+
+#container div:not(#item2) {
+    flex-basis: 15%;
+} 
+
+#item2 {
+    flex-basis: 50%;
+}

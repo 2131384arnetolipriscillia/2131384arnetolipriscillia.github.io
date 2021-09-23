@@ -1,0 +1,44 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+
+    height: 100%;
+    font-size: 3em;
+}
+
+#navigation {
+    flex-grow: 1;
+    background-color: lightblue;
+}
+
+#contenu {
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+#contenu > header, #contenu > footer {
+    flex-basis: 20vh;
+    background-color: lightcoral;
+}
+
+#section_article {
+    flex-basis: 60vh;
+    display: flex;
+}
+
+#section_article > article {
+    flex-grow: 3;
+    background-color: lightgreen;
+}
+
+#section_article > aside {
+    flex-grow: 1;
+    background-color: lightgoldenrodyellow;
+}
