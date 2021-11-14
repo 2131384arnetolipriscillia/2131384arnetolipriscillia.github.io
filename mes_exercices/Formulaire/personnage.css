@@ -1,0 +1,33 @@
+input, select, textarea{
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h1{
+    color: palevioletred;
+}
+
+input:focus{
+    background-color: palevioletred;
+}
+
+input:required{
+    background-color: rgb(226, 157, 180);
+}
+/* input:invalid{
+    background-color: powderblue;
+} */
+
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2017/08/02/14/26/winter-landscape-2571788_960_720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+fieldset{
+    background-color: rgba(255, 255, 255, 0.226);
+}

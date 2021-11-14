@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+#container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 150px);
+  grid-gap: 0px;
+  grid-template-areas: 
+  "i1"
+  "i2"
+  "i3";
+}
+
+
+.item1{
+  grid-area: i3;
+}
+
+.item2{
+  grid-area: i2;
+}
+
+i{
+font-size: 30px;
+}
+
+body {
+  background-image: url(astronomy-1867616_1280.jpg);
+  background-size:cover;
+}
+
+i span {
+  position:absolute;
+  margin-left:20px;
+  width: 150px;
+  text-align: center;
+  color:rgb(228, 229, 230);
+  background:rgba(241, 117, 245);
+  padding:15px;
+  border-radius:15px;
+  transform:scale(0) rotate(-12deg);
+  transition:all .25s;
+  font-size: 0.5em;
+  text-shadow: none;
+}
+
+i:hover span, i:focus span{
+  transform:scale(1) rotate(0);
+  opacity:1;
+}
+
+/* Icone de l'horloge */
+.horloge{
+  position:absolute;
+  top: 20px;
+  left: 20px;
+  color:rgb(241, 117, 245);
+  border-radius: 50px;
+  filter: drop-shadow(0 0 10px #ff66e5);
+  background: transparent;
+  transition: all .4s;
+  cursor: pointer;
+}
+.horloge:hover {
+  /* box-shadow: 0 0 0 10px rgb(87, 87, 231); */
+  color: #66ff99;
+  filter: drop-shadow(0 0 10px #66ff99);
+}
+
+/* Icone du calendar */
+.calendar{
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  color:rgb(241, 117, 245);
+  border-radius: 50px;
+  filter: drop-shadow(0 0 10px #ff66e5);
+  background: transparent;
+  transition: all .4s;
+  cursor: pointer;
+}
+.calendar:hover {
+  /* box-shadow:0 0 0 10px rgb(87, 87, 231); */
+  color: #66ff99;
+  filter: drop-shadow(0 0 10px #66ff99);
+}
+
+
+/* La date écrite en lettre  */
+#date {
+  font-family: 'Orbitron', sans-serif;
+  color: #ff66e5;
+  font-size: 65px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* L'heure numérique */
+#clock {
+  font-family: 'Orbitron', sans-serif;
+  color: #66ff99;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Masquer la date en appuyant sur l'icone Calendar */
+#date.non-visible {
+  display: none;
+}
+
+

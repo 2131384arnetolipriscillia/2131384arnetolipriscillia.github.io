@@ -28,7 +28,12 @@ h3{
     justify-content:center;
     margin: 5px;
     padding: 2px;
-
+    transition-duration: 1s;
+    transition-property: all;
+  }
+  .element1:hover {
+    transform:scale(1.2);
+    color: radial-gradient(blue, pink, red, orange, green);
   }
 
   .element2 {
@@ -38,8 +43,14 @@ h3{
     box-shadow: 5px 10px 8px #888888;
     margin: 5px;
     padding: 3px;
-
+    transition-duration: 1.5s;
+    transition-property: all;
   }
+
+  .element2:hover {
+    transform: rotate(360deg);
+  }
+
      
 
 

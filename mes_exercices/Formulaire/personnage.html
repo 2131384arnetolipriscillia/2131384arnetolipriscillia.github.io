@@ -1,0 +1,70 @@
+<<!DOCTYPE html>
+
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <title> Titre </title>
+        <link rel="stylesheet" href="personnage.css">
+        <link rel="icon" href="./img/icon.png">
+
+    </head>
+
+    <body>
+
+        <form action="/perso.php" method="post">
+
+            <h1>Fiche de personnage</h1>
+
+            <fieldset>
+                <legend>Information usager</legend>
+
+                <div>
+                    <label for="nom_personnage">Nom : </label>
+                    <input type="text" name="nom_personnage" id="nom_personnage" placeholder="Entrez votre nom">
+                </div>
+                <div>
+                    <label for="courriel_usager">Courriel : </label>
+                    <input type="email" name="courriel_usager" id="courriel_usager" placeholder="Entrez votre email" required>
+                </div>
+
+                <div>
+                    <label for="date_naissance_usager">Date de naissance : </label>
+                    <input type="date" name="date_naissance_usager" id="date_naissance_usager">
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Information personnage : </legend>
+
+                <div>
+                    <label for="nom_personnage">Nom : </label>
+                    <input type="text" name="nom_personnage" id="nom_personnage" placeholder="Entrez votre nom">
+                </div>
+
+
+                <div>
+                    <label for="classe">Classe : </label>
+                    <select name="classe" id="classe">
+                        <option value="selection">Selectionner</option>
+                        <option value="guerrier">Guerrier</option>
+                        <option value="healer">Healer</option>
+                        <option value="suerrier">Sniper</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="biographie">Biographie : </label> <!-- Il faut que ce soit pareil que l'id du input  -->
+                    <textarea id="biographie" name="biographie"> </textarea>
+                </div>
+
+                <button type="submit">Soumettre</button>
+            
+            </fieldset>
+       
+        </form>
+
+    </body>
+
+    </html>
